@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Hero() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center bg-white px-6 text-center">
@@ -22,9 +23,12 @@ export default function Hero() {
         your progress, and helps your team learn together.
       </p>
       <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
-        <button className="rounded-xl bg-black px-8 py-4 text-base font-semibold text-white transition duration-300 hover:scale-105">
+        <Link
+          href="/dashboard"
+          className="rounded-xl bg-black px-8 py-4 font-semibold text-white transition hover:opacity-90"
+        >
           Get Started
-        </button>
+        </Link>
 
         <button className="rounded-xl border border-gray-300 bg-white px-8 py-4 text-base font-semibold text-gray-900 transition duration-300 hover:bg-gray-100">
           Watch Demo
