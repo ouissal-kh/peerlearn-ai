@@ -1,17 +1,29 @@
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
+import Problem from "@/components/sections/Problem";
+import Solution from "@/components/sections/Solution";
+import HowItWorks from "@/components/sections/HowItWorks";
+import Features from "@/components/sections/Features";
+import Stats from "@/components/sections/Stats";
+import Testimonials from "@/components/sections/Testimonials";
+import CTA from "@/components/sections/CTA";
+import Footer from "@/components/layout/Footer";
+
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white">
-      <h1 className="text-6xl font-bold text-gray-900">
-        PeerLearn AI
-      </h1>
+    <>
+      <Navbar />
+      <Hero />
+      <Problem />
+      <Solution />
+      <HowItWorks />
+      <Features />
+      <Stats />
+      <Testimonials />
+      <CTA />
+  <   Footer />
 
-      <p className="mt-6 max-w-2xl text-center text-lg text-gray-600">
-        AI Operating System for Collaborative Learning
-      </p>
-
-      <button className="mt-10 rounded-xl bg-black px-6 py-3 text-white transition hover:opacity-90">
-        Get Started
-      </button>
-    </main>
+    </>
   );
 }
